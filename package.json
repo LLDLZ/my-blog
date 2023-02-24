@@ -1,0 +1,32 @@
+{
+  "name": "my-blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": {
+    "blog": "./commander/bin/createBlog.js"
+  },
+  "scripts": {
+    "dev": "vuepress dev docs --temp .temp ",
+    "build": "vuepress build docs",
+    "test": "echo “Error: no test specified” && exit 1",
+    "deploy": "bash deploy.sh"
+  },
+  "repository": "https://gitee.com/lldlz/my-blog.git",
+  "author": "dllz <792866833@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.9.8",
+    "vuepress-plugin-code-copy": "^1.0.6"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "clear": "^0.1.0",
+    "commander": "^4.1.1",
+    "download-git-repo": "^3.0.2",
+    "figlet": "^1.3.0",
+    "handlebars": "^4.7.3",
+    "open": "^7.0.3",
+    "ora": "^4.0.3",
+    "watch": "^1.0.2"
+  }
+}
