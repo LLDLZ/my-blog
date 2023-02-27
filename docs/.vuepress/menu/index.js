@@ -6,6 +6,8 @@ const vue2CodeAnalysis = require('./blog/vue2CodeAnalysis')
 
 const mac = require('./issue/mac')
 
+const git = require('./blog/git')
+
 
 
 module.exports = [
@@ -23,6 +25,11 @@ module.exports = [
         title: 'Vue2.x 源码解析',
         collapsable: true,
         children: vue2CodeAnalysis
+    },
+    {
+        title: 'git 教程',
+        collapsable: true,
+        children: git
     },
     {
         title: "问题",
