@@ -8,6 +8,10 @@ const mac = require('./issue/mac')
 
 const git = require('./blog/git')
 
+const node = require('./blog/node')
+
+const linux = require('./blog/linux')
+
 
 
 module.exports = [
@@ -27,9 +31,19 @@ module.exports = [
         children: vue2CodeAnalysis
     },
     {
-        title: 'git 教程',
+        title: 'Git',
         collapsable: true,
         children: git
+    },
+    {
+        title: 'Node',
+        collapsable: true,
+        children: node
+    },
+    {
+        title: 'Linux',
+        collapsable: true,
+        children: linux
     },
     {
         title: "问题",
