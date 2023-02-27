@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-
+# mac deploy 优化后的
 # 确保脚本抛出遇到的错误
 set -e
 
@@ -13,7 +13,11 @@ git init
 git add -A
 git commit -m 'deploy'
 
-# 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f https://github.com/LLDLZ/my-blog.git master:gh-pages  
+git branch -m gh-pages
+
+git remote add orgin https://github.com/LLDLZ/my-blog.git
+
+# # # 如果发布到 https://<USERNAME>.github.io/<REPO>
+git push -f https://github.com/LLDLZ/my-blog.git gh-pages
 
 cd -

@@ -9,7 +9,9 @@
     "dev": "vuepress dev docs --temp .temp ",
     "build": "vuepress build docs",
     "test": "echo “Error: no test specified” && exit 1",
-    "deploy": "bash deploy.sh"
+    "deploy": "bash deploy.sh",
+    "macDeploy": "bash macDeploy.sh",
+    "winDeploy": "bash winDeploy.sh"
   },
   "repository": "https://gitee.com/lldlz/my-blog.git",
   "author": "dllz <792866833@qq.com>",
