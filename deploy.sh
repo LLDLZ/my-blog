@@ -11,7 +11,8 @@ cd docs/.vuepress/dist
 
 git init
 git add -A
-git commit -m 'deploy'
+# 声明提交的日期，避免每次查看提交信息都是 deploy 无法界定是否提交成功
+git commit -m "deploy:$(date +%F%n%T)"
 
 git branch -m gh-pages
 
