@@ -23,6 +23,10 @@ module.exports = {
         ]
     ],
     themeConfig: {
+        // 侧边栏主题深度
+        sidebarDepth: 2,
+        // 最后更新时间
+        lastUpdated: '更新日期',
         nav: [
             { text: "首页", link: "/" },
             {
