@@ -16,10 +16,16 @@ module.exports = {
     // base: "/my-blog/",
     // dest: './dist',
     ...bundleObj,
-    plugins: [['vuepress-plugin-code-copy', true]],
+    theme: "reco",
+    plugins: [
+        ['vuepress-plugin-code-copy', true]
+    ],
     head: [
         [
-            'link', { rel: 'icon', href: '/favicon.ico' }
+            'link', {
+                rel: 'icon',
+                href: '/favicon.ico'
+            }
         ]
     ],
     themeConfig: {
@@ -27,13 +33,16 @@ module.exports = {
         sidebarDepth: 2,
         // 最后更新时间
         lastUpdated: '更新日期',
-        nav: [
-            { text: "首页", link: "/" },
+        nav: [{
+                text: "首页",
+                link: "/"
+            },
             {
                 text: "DLLZ 的博客",
-                items: [
-                    { text: "掘金", link: "https://juejin.cn/user/2911162523196125/posts" },
-                ]
+                items: [{
+                    text: "掘金",
+                    link: "https://juejin.cn/user/2911162523196125/posts"
+                }, ]
             }
         ],
         sidebar
