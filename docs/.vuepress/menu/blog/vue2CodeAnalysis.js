@@ -20,4 +20,8 @@ module.exports = [
         title: "Vue2.x 源码解析（五） 全局 API 原理",
         path: "/blog/vue2CodeAnalysis/5"
     },
-]
+    {
+        title: "Vue2.x 源码解析（6） 实例方法",
+        path: "/blog/vue2CodeAnalysis/6"
+    },
+    ]

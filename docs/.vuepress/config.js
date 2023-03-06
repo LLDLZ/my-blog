@@ -31,6 +31,8 @@ module.exports = {
     themeConfig: {
         // 侧边栏主题深度
         sidebarDepth: 2,
+        // vuepress-theme-reco 1.6 版本 将明细目录变为子侧边栏
+        subSidebar: 'auto',
         // 最后更新时间
         lastUpdated: '更新日期',
         nav: [{
