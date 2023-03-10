@@ -1,5 +1,4 @@
-module.exports = [
-    {
+module.exports = [{
         title: "Vue2.x 源码解析（一）",
         path: "/blog/vue2CodeAnalysis/1"
     },
@@ -24,4 +23,8 @@ module.exports = [
         title: "Vue2.x 源码解析（6） 实例方法",
         path: "/blog/vue2CodeAnalysis/6"
     },
-    ]
+    {
+        title: "Vue2.x 源码解析（7） HookEvent",
+        path: "/blog/vue2CodeAnalysis/7"
+    },
+]
