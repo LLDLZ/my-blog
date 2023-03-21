@@ -27,4 +27,19 @@ module.exports = [{
         title: "Vue2.x 源码解析（7） HookEvent",
         path: "/blog/vue2CodeAnalysis/7"
     },
-]
+
+    {
+        title: "Vue2.x 源码解析（8） 编译器-解析",
+        path: "/blog/vue2CodeAnalysis/8"
+    },
+    
+    {
+        title: "Vue2.x 源码解析（9） 编译器-优化",
+        path: "/blog/vue2CodeAnalysis/9"
+    },
+    
+    {
+        title: "Vue2.x 源码解析（10） 编译器-生成渲染函数",
+        path: "/blog/vue2CodeAnalysis/10"
+    },
+    ]
