@@ -12,6 +12,8 @@ const node = require('./blog/node')
 
 const linux = require('./blog/linux')
 
+const vueRouterCodeAnalysis = require('./blog/vueRouterCodeAnalysis')
+
 
 
 module.exports = [
@@ -29,6 +31,11 @@ module.exports = [
         title: 'Vue2.x 源码解析',
         collapsable: true,
         children: vue2CodeAnalysis
+    },
+    {
+        title: 'VueRouter 源码解析',
+        collapsable: true,
+        children: vueRouterCodeAnalysis
     },
     {
         title: 'Git',
