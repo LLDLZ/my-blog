@@ -28,12 +28,12 @@ module.exports = [
         ]
     },
     {
-        title: 'Vue2.x 源码解析',
+        title: 'Vue 2.x 源码解析',
         collapsable: true,
         children: vue2CodeAnalysis
     },
     {
-        title: 'VueRouter 源码解析',
+        title: 'VueRouter 3.6.3 源码解析',
         collapsable: true,
         children: vueRouterCodeAnalysis
     },
