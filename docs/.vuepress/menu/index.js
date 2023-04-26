@@ -14,6 +14,8 @@ const linux = require('./blog/linux')
 
 const vueRouterCodeAnalysis = require('./blog/vueRouterCodeAnalysis')
 
+const vuexCodeAnalysis = require('./blog/vuexCodeAnalysis')
+
 
 
 module.exports = [
@@ -36,6 +38,11 @@ module.exports = [
         title: 'VueRouter 3.6.3 源码解析',
         collapsable: true,
         children: vueRouterCodeAnalysis
+    },
+    {
+        title: 'Vuex 3.6.2 源码解析',
+        collapsable: true,
+        children: vuexCodeAnalysis
     },
     {
         title: 'Git',
