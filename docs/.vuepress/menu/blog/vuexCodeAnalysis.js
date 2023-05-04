@@ -4,7 +4,7 @@ module.exports = [
     path: "/blog/vuexCodeAnalysis/1",
   },
   {
-    title: "Vuex 源码解析（二）",
+    title: "Vuex 源码解析（二）install 、 store 初始化 、 模块安装 、 state ... 实现原理",
     path: "/blog/vuexCodeAnalysis/2",
   },
   {
