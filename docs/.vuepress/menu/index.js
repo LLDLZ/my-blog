@@ -16,6 +16,8 @@ const vueRouterCodeAnalysis = require('./blog/vueRouterCodeAnalysis')
 
 const vuexCodeAnalysis = require('./blog/vuexCodeAnalysis')
 
+const writeAccordingPromiseA = require('./blog/writeAccordingPromiseA+')
+
 
 
 module.exports = [
@@ -43,6 +45,11 @@ module.exports = [
         title: 'Vuex 3.6.2 源码解析',
         collapsable: true,
         children: vuexCodeAnalysis
+    },
+    {
+        title: '依据 PromiseA+ 写 promise',
+        collapsable: true,
+        children: writeAccordingPromiseA
     },
     {
         title: 'Git',
