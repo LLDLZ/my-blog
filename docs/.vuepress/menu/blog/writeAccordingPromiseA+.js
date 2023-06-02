@@ -8,7 +8,7 @@ module.exports = [
     path: "/blog/writeAccordingPromiseA+/2",
   },
   {
-    title: "手写 promise （ 三 ） Promise 部分 API 实现",
+    title: "手写 promise （ 三 ） Promise API 实现",
     path: "/blog/writeAccordingPromiseA+/3",
   },
   {
