@@ -18,6 +18,8 @@ const vuexCodeAnalysis = require('./blog/vuexCodeAnalysis')
 
 const writeAccordingPromiseA = require('./blog/writeAccordingPromiseA+')
 
+const notes = require('./blog/notes')
+
 
 
 module.exports = [
@@ -30,6 +32,11 @@ module.exports = [
                 path: '/blog/buildBlog/1',
             }
         ]
+    },
+    {
+        title: '日常记录',
+        collapsable: true,
+        children: notes
     },
     {
         title: 'Vue 2.x 源码解析',
