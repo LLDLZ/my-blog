@@ -31,4 +31,16 @@ module.exports = [
     title: "Map、WeakMap、Object 区别",
     path: "/blog/notes/8",
   },
+  {
+    title: "nvm 安装及使用以及 node 环境配置",
+    path: "/blog/notes/9",
+  },
+  {
+    title: "node-sass 安装失败",
+    path: "/blog/notes/10",
+  },
+  {
+    title: "本地部署 ArcGIS JS",
+    path: "/blog/notes/11",
+  },
 ];
