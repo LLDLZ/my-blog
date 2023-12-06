@@ -43,4 +43,12 @@ module.exports = [
     title: "本地部署 ArcGIS JS",
     path: "/blog/notes/11",
   },
+  {
+    title: "eslint 项目配置",
+    path: "/blog/notes/12",
+  },
+  {
+    title: "使用 create-react-app 生成项目太慢的问题",
+    path: "/blog/notes/13",
+  },
 ];
