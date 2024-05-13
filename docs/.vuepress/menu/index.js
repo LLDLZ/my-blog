@@ -22,7 +22,7 @@ const notes = require('./blog/notes')
 
 const webglNotes = require('./blog/webglNotes')
 
-
+const mysql = require('./blog/mysql')
 
 module.exports = [
     {
@@ -79,6 +79,11 @@ module.exports = [
         title: 'Webgl',
         collapsable: true,
         children: webglNotes
+    },
+    {
+        title: 'Mysql及Sql语句',
+        collapsable: true,
+        children: mysql
     },
     {
         title: "问题",
