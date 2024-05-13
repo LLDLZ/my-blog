@@ -51,4 +51,20 @@ module.exports = [
     title: "使用 create-react-app 生成项目太慢的问题",
     path: "/blog/notes/13",
   },
+  {
+    title: "使用 puppeteer 实现 gitee pages 自动更新",
+    path: "/blog/notes/14",
+  },
+  {
+    title: "todo tree 的使用",
+    path: "/blog/notes/15",
+  },
+  {
+    title: "node-cli-tree 的使用",
+    path: "/blog/notes/16",
+  },
+  {
+    title: "vpn 使用及教程",
+    path: "/blog/notes/17",
+  },
 ];

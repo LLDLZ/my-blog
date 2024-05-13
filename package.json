@@ -11,7 +11,8 @@
     "test": "echo “Error: no test specified” && exit 1",
     "deploy": "bash deploy.sh",
     "macDeploy": "bash macDeploy.sh",
-    "winDeploy": "bash winDeploy.sh"
+    "winDeploy": "bash winDeploy.sh",
+    "updateGiteePage": "node ../../../gitee-page-update/index.js"
   },
   "repository": "https://gitee.com/lldlz/my-blog.git",
   "author": "dllz <792866833@qq.com>",

@@ -20,6 +20,8 @@ const writeAccordingPromiseA = require('./blog/writeAccordingPromiseA+')
 
 const notes = require('./blog/notes')
 
+const webglNotes = require('./blog/webglNotes')
+
 
 
 module.exports = [
@@ -72,6 +74,11 @@ module.exports = [
         title: 'Linux',
         collapsable: true,
         children: linux
+    },
+    {
+        title: 'Webgl',
+        collapsable: true,
+        children: webglNotes
     },
     {
         title: "问题",
