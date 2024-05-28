@@ -24,6 +24,8 @@ const webglNotes = require('./blog/webglNotes')
 
 const mysql = require('./blog/mysql')
 
+const dotnet = require('./blog/dotnet')
+
 module.exports = [
     {
         title: '搭建个人博客',
@@ -84,6 +86,11 @@ module.exports = [
         title: 'Mysql及Sql语句',
         collapsable: true,
         children: mysql
+    },
+    {
+        title: '.net',
+        collapsable: true,
+        children: dotnet
     },
     {
         title: "问题",
