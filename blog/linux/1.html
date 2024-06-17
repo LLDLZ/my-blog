@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Linux 保姆级教程 | DLLZ的博客</title>
+    <meta name="generator" content="VuePress 1.9.8">
+    <link rel="icon" href="/my-blog/favicon.ico">
+    <meta name="description" content="DLLZ的博客">
+    
+    <link rel="preload" href="/my-blog/assets/css/0.styles.704ef241.css" as="style"><link rel="preload" href="/my-blog/assets/js/app.14f16a50.js" as="script"><link rel="preload" href="/my-blog/assets/js/3.e2c549c5.js" as="script"><link rel="preload" href="/my-blog/assets/js/1.8c225dfe.js" as="script"><link rel="preload" href="/my-blog/assets/js/15.6a7a12a9.js" as="script"><link rel="prefetch" href="/my-blog/assets/js/10.97d4347f.js"><link rel="prefetch" href="/my-blog/assets/js/11.cb67ab4c.js"><link rel="prefetch" href="/my-blog/assets/js/12.ed938d88.js"><link rel="prefetch" href="/my-blog/assets/js/13.f64ce655.js"><link rel="prefetch" href="/my-blog/assets/js/14.a5a6d31e.js"><link rel="prefetch" href="/my-blog/assets/js/16.27a0bcf3.js"><link rel="prefetch" href="/my-blog/assets/js/17.16469f80.js"><link rel="prefetch" href="/my-blog/assets/js/18.d2c8b8f9.js"><link rel="prefetch" href="/my-blog/assets/js/19.86b7b7e8.js"><link rel="prefetch" href="/my-blog/assets/js/20.1cf187cb.js"><link rel="prefetch" href="/my-blog/assets/js/21.abf9c7e5.js"><link rel="prefetch" href="/my-blog/assets/js/22.a40cbab2.js"><link rel="prefetch" href="/my-blog/assets/js/23.9983455f.js"><link rel="prefetch" href="/my-blog/assets/js/24.0c181a00.js"><link rel="prefetch" href="/my-blog/assets/js/25.859e9f97.js"><link rel="prefetch" href="/my-blog/assets/js/26.5af2b91b.js"><link rel="prefetch" href="/my-blog/assets/js/27.a1bff293.js"><link rel="prefetch" href="/my-blog/assets/js/28.e7526632.js"><link rel="prefetch" href="/my-blog/assets/js/29.3245fe64.js"><link rel="prefetch" href="/my-blog/assets/js/30.4de16f73.js"><link rel="prefetch" href="/my-blog/assets/js/31.a26f8865.js"><link rel="prefetch" href="/my-blog/assets/js/32.8969bec8.js"><link rel="prefetch" href="/my-blog/assets/js/33.8355036a.js"><link rel="prefetch" href="/my-blog/assets/js/34.dbcfc51e.js"><link rel="prefetch" href="/my-blog/assets/js/35.3215a6ff.js"><link rel="prefetch" href="/my-blog/assets/js/36.4e40b255.js"><link rel="prefetch" href="/my-blog/assets/js/37.42de5a09.js"><link rel="prefetch" href="/my-blog/assets/js/38.d76b4737.js"><link rel="prefetch" href="/my-blog/assets/js/39.28404143.js"><link rel="prefetch" href="/my-blog/assets/js/4.1c24528b.js"><link rel="prefetch" href="/my-blog/assets/js/40.e9728849.js"><link rel="prefetch" href="/my-blog/assets/js/41.c910252d.js"><link rel="prefetch" href="/my-blog/assets/js/42.0ef093ee.js"><link rel="prefetch" href="/my-blog/assets/js/43.49116a6a.js"><link rel="prefetch" href="/my-blog/assets/js/44.c28c4846.js"><link rel="prefetch" href="/my-blog/assets/js/45.50359190.js"><link rel="prefetch" href="/my-blog/assets/js/46.cc222a17.js"><link rel="prefetch" href="/my-blog/assets/js/47.394c238f.js"><link rel="prefetch" href="/my-blog/assets/js/48.78171f49.js"><link rel="prefetch" href="/my-blog/assets/js/49.90d29865.js"><link rel="prefetch" href="/my-blog/assets/js/5.27de5be4.js"><link rel="prefetch" href="/my-blog/assets/js/50.7067fee4.js"><link rel="prefetch" href="/my-blog/assets/js/51.a523aaa0.js"><link rel="prefetch" href="/my-blog/assets/js/52.4db3dab4.js"><link rel="prefetch" href="/my-blog/assets/js/53.b0d66c05.js"><link rel="prefetch" href="/my-blog/assets/js/54.402a9c08.js"><link rel="prefetch" href="/my-blog/assets/js/55.d091d9e9.js"><link rel="prefetch" href="/my-blog/assets/js/56.e07ad192.js"><link rel="prefetch" href="/my-blog/assets/js/57.f9859879.js"><link rel="prefetch" href="/my-blog/assets/js/58.e2a9e983.js"><link rel="prefetch" href="/my-blog/assets/js/59.a3ecff34.js"><link rel="prefetch" href="/my-blog/assets/js/6.be69cbe3.js"><link rel="prefetch" href="/my-blog/assets/js/60.52101404.js"><link rel="prefetch" href="/my-blog/assets/js/61.e348bc2a.js"><link rel="prefetch" href="/my-blog/assets/js/62.67421801.js"><link rel="prefetch" href="/my-blog/assets/js/63.b4fbcb1d.js"><link rel="prefetch" href="/my-blog/assets/js/64.41aaa59f.js"><link rel="prefetch" href="/my-blog/assets/js/65.6eebda8c.js"><link rel="prefetch" href="/my-blog/assets/js/66.dd19ad74.js"><link rel="prefetch" href="/my-blog/assets/js/67.9249dcfd.js"><link rel="prefetch" href="/my-blog/assets/js/68.2f02a00b.js"><link rel="prefetch" href="/my-blog/assets/js/69.4ea01126.js"><link rel="prefetch" href="/my-blog/assets/js/7.d272b580.js"><link rel="prefetch" href="/my-blog/assets/js/70.c37ab7f5.js"><link rel="prefetch" href="/my-blog/assets/js/71.1a626dae.js"><link rel="prefetch" href="/my-blog/assets/js/8.7d2afeb1.js"><link rel="prefetch" href="/my-blog/assets/js/9.454f9136.js">
+    <link rel="stylesheet" href="/my-blog/assets/css/0.styles.704ef241.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-7dd95ae2><div data-v-7dd95ae2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>DLLZ的博客</h3> <p class="description" data-v-59e6cb88>DLLZ的博客</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><!---->
+          
+        <!---->
+        2024
+      </a></span></div></div> <div class="hide" data-v-7dd95ae2><header class="navbar" data-v-7dd95ae2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/my-blog/" class="home-link router-link-active"><!----> <span class="site-name">DLLZ的博客</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/my-blog/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      DLLZ 的博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/2911162523196125/posts" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><!----> <!----> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>62</h3> <h6 data-v-1fad0c41>Articles</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>0</h3> <h6 data-v-1fad0c41>Tags</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/my-blog/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      DLLZ 的博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/2911162523196125/posts" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>搭建个人博客</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>日常记录</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Vue 2.x 源码解析</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>VueRouter 3.6.3 源码解析</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Vuex 3.6.2 源码解析</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>依据 PromiseA+ 写 promise</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Git</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Node</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Linux</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/my-blog/blog/linux/1.html" aria-current="page" class="active sidebar-link">Linux 保姆级教程</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Webgl</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Mysql及Sql语句</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>.net</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>问题</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88></h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><!---->
+          
+        <!---->
+        2024
+      </a></span></div></div> <div data-v-7dd95ae2><div data-v-7dd95ae2><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">Linux 保姆级教程</h1> <div data-v-8a445198><!----> <!----> <!----> <!----></div></div> <div class="theme-reco-content content__default"><h1 id="linux-保姆级教程"><a href="#linux-保姆级教程" class="header-anchor">#</a> Linux 保姆级教程</h1> <h2 id="linux-文件系统"><a href="#linux-文件系统" class="header-anchor">#</a> Linux 文件系统</h2> <blockquote><p>1.Linux一切皆文件</p> <p>2.只有一个顶级目录，不像windows分C盘、D盘、E盘</p></blockquote> <h2 id="目录结构"><a href="#目录结构" class="header-anchor">#</a> 目录结构</h2> <div class="language-bash extra-class"><pre class="language-bash"><code>/		//根目录
+├─	bin
+├─	sbin
+├─	boot
+├─	dev
+├─	etc
+├─	home
+├─	root
+├─	lib
+├─	usr
+└─	var
+</code></pre></div><h2 id="文件含义"><a href="#文件含义" class="header-anchor">#</a> 文件含义</h2> <table><thead><tr><th style="text-align:left;">Linux</th> <th style="text-align:center;">含义</th> <th style="text-align:right;">windows</th></tr></thead> <tbody><tr><td style="text-align:left;">/bin</td> <td style="text-align:center;">所有用户可用的基本命令存放的位置</td> <td style="text-align:right;">windows没有固定的命令存放目录</td></tr> <tr><td style="text-align:left;">/sbin</td> <td style="text-align:center;">需要管理员权限才能使用的命令</td> <td style="text-align:right;"></td></tr> <tr><td style="text-align:left;">/boot</td> <td style="text-align:center;">linux系统启动的时候需要加载和使用的文件</td> <td style="text-align:right;"></td></tr> <tr><td style="text-align:left;">/dev</td> <td style="text-align:center;">外设连接linux后，对应的文件存放的位置</td> <td style="text-align:right;">类似Windows中的U盘，光盘的符号文件。</td></tr> <tr><td style="text-align:left;">/etc</td> <td style="text-align:center;">存放系统或者安装的程序的配置文件,注册服务等</td> <td style="text-align:right;">类似windows中的注册表，</td></tr> <tr><td style="text-align:left;">/home</td> <td style="text-align:center;">家目录，linux中每新建一个用户，会自动在home中为该用户分配一个文件夹</td> <td style="text-align:right;">类似windows中的&quot;我的文档&quot;，每个用户有自己的目录。</td></tr> <tr><td style="text-align:left;">/root</td> <td style="text-align:center;">root账户的家目录，仅供root账户使用</td> <td style="text-align:right;">类似windows中的Administrator账户的&quot;我的文档&quot;</td></tr> <tr><td style="text-align:left;">/lib</td> <td style="text-align:center;">linux的命令和系统启动，需要使用一些公共的依赖，放在lib中，类似我们开发的代码执行需要引入的jdk的jar</td> <td style="text-align:right;"></td></tr> <tr><td style="text-align:left;">/usr</td> <td style="text-align:center;">很多系统软件的默认安装路径</td> <td style="text-align:right;">类似windows中的C盘下的Program Files目录。</td></tr> <tr><td style="text-align:left;">/var</td> <td style="text-align:center;">系统和程序运行产生的日志文件和缓存文件放在这里</td> <td style="text-align:right;"></td></tr></tbody></table> <h2 id="文件管理命令"><a href="#文件管理命令" class="header-anchor">#</a> 文件管理命令</h2> <blockquote><p>注意大小写</p></blockquote> <h3 id="查看文件列表"><a href="#查看文件列表" class="header-anchor">#</a> 查看文件列表</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 查看文件列表</span>
+	<span class="token function">ls</span> <span class="token punctuation">[</span>-参数1参数2<span class="token punctuation">]</span> <span class="token punctuation">[</span>目标文件夹<span class="token punctuation">]</span>
+<span class="token comment"># 查看当前目录下的文件列表</span>
+	<span class="token function">ls</span>
+<span class="token comment"># 查看指定目录下的文件</span>
+	<span class="token function">ls</span> /
+<span class="token comment"># 查看详细信息，元数据信息(用户、组、大小、创建时间、权限信息、文件类型)</span>
+	<span class="token function">ls</span> <span class="token parameter variable">-l</span>
+<span class="token comment"># 查看隐藏文件</span>
+	<span class="token function">ls</span> <span class="token parameter variable">-a</span> 
+<span class="token comment"># 参数并用</span>
+	<span class="token function">ls</span> <span class="token parameter variable">-la</span>
+</code></pre></div><h3 id="切换目录"><a href="#切换目录" class="header-anchor">#</a> 切换目录</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 2. 切换目录</span>
+	<span class="token builtin class-name">cd</span> 目标文件夹
+<span class="token comment"># 绝对路径切换</span>
+	<span class="token builtin class-name">cd</span> 绝对路径
+<span class="token comment"># 相对路径切换</span>
+	<span class="token builtin class-name">cd</span> 相对路径
+<span class="token comment"># 例子：切换到/etc/sysconfig/networks-scripts 目录下</span>
+</code></pre></div><h3 id="查看当前命令所在的目录"><a href="#查看当前命令所在的目录" class="header-anchor">#</a> 查看当前命令所在的目录</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token punctuation">[</span>root@centos7 network-scripts<span class="token punctuation">]</span><span class="token comment"># pwd</span>
+/etc/sysconfig/network-scripts
+<span class="token comment"># 特殊目录符号</span>
+	~ 当前用户的home目录
+	<span class="token builtin class-name">.</span> 当前目录
+	<span class="token punctuation">..</span> 上一级目录
+</code></pre></div><h3 id="新建文件夹及文件"><a href="#新建文件夹及文件" class="header-anchor">#</a> 新建文件夹及文件</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 在当前位置新建文件夹</span>
+	<span class="token function">mkdir</span> 文件夹名
+<span class="token comment"># 在指定目录位置，创建文件夹，并创建父文件夹</span>
+	<span class="token function">mkdir</span> <span class="token parameter variable">-p</span> /a/b/文件夹名
+<span class="token comment"># 在当前目录下新建文件</span>
+	<span class="token function">touch</span> 文件名
+
+</code></pre></div><h3 id="删除文件"><a href="#删除文件" class="header-anchor">#</a> 删除文件</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 删除文件</span>
+	<span class="token function">rm</span> 文件
+<span class="token comment"># 删除文件夹</span>
+	<span class="token function">rm</span> <span class="token parameter variable">-r</span> 文件夹
+<span class="token comment"># 强制删除不询问</span>
+	<span class="token function">rm</span> <span class="token parameter variable">-rf</span> 文件
+</code></pre></div><h3 id="拷贝文件"><a href="#拷贝文件" class="header-anchor">#</a> 拷贝文件</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 拷贝文件</span>
+	<span class="token function">cp</span> 原文件  新文件
+<span class="token comment"># 拷贝文件夹</span>
+	<span class="token function">cp</span> <span class="token parameter variable">-r</span> 源文件夹 新文件夹
+</code></pre></div><h3 id="移动文件或修改文件名"><a href="#移动文件或修改文件名" class="header-anchor">#</a> 移动文件或修改文件名</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 移动源文件到目标文件夹中</span>
+	<span class="token function">mv</span> 文件  文件夹
+<span class="token comment"># 修改文件A的名字为文件B</span>
+	<span class="token function">mv</span> 文件A 文件B
+</code></pre></div><h3 id="获取文件的md5指纹-数字签名"><a href="#获取文件的md5指纹-数字签名" class="header-anchor">#</a> 获取文件的md5指纹(数字签名)</h3> <div class="language-bash extra-class"><pre class="language-bash"><code>md5sum 文件名
+<span class="token comment"># 简介</span>
+<span class="token number">1</span>. 数字签名，又称数字指纹
+<span class="token number">2</span>. 可以验证文件是否被修改
+<span class="token number">3</span>. 一个文件通过计算得到的一串字符串,文件内容的唯一标记<span class="token punctuation">(</span>文件内容不变,指纹不会变<span class="token punctuation">)</span>
+</code></pre></div><h3 id="文本内容查看命令"><a href="#文本内容查看命令" class="header-anchor">#</a> 文本内容查看命令</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 查看文件中的全部信息(适合查看小文档)</span>
+	<span class="token function">cat</span> 文件名
+
+<span class="token comment"># 以分页的方式浏览文件信息(适合查看大文档)，进入浏览模式</span>
+	<span class="token function">less</span> 文件名
+<span class="token comment"># 浏览模式快捷键</span>
+	↑ <span class="token comment">#上一行</span>
+    ↓ <span class="token comment">#下一行</span>
+    G <span class="token comment">#最后一页</span>
+    g <span class="token comment">#第一页</span>
+    空格 <span class="token comment">#下一页</span>
+    /关键词 <span class="token comment">#搜索关键词</span>
+<span class="token comment"># 退出浏览模式，回到Linux命令行模式</span>
+    q <span class="token comment">#退出</span>
+
+
+<span class="token comment"># 实时滚动显示文件的最后10行信息(默认10行)</span>
+<span class="token function">tail</span> <span class="token parameter variable">-f</span> 文件名
+<span class="token comment"># 显示文件的最后20行信息</span>
+<span class="token function">tail</span> <span class="token parameter variable">-n</span> <span class="token number">20</span> 文件名
+<span class="token function">tail</span> <span class="token parameter variable">-n</span> <span class="token parameter variable">-20</span> 文件名
+<span class="token comment"># 显示文件信息从第20行至文件末尾</span>
+<span class="token function">tail</span> <span class="token parameter variable">-n</span> +20 文件名
+</code></pre></div><h3 id="文件查找"><a href="#文件查找" class="header-anchor">#</a> 文件查找</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment">## 文件名查找</span>
+<span class="token comment"># 语法</span>
+	<span class="token function">find</span> 搜索路径 <span class="token parameter variable">-name</span> <span class="token string">&quot;文件名关键词&quot;</span>
+<span class="token comment"># 例子</span>
+	<span class="token function">find</span> / <span class="token parameter variable">-name</span> <span class="token string">&quot;passwd&quot;</span>
+	<span class="token function">find</span> / <span class="token parameter variable">-name</span> <span class="token string">&quot;ifcfg-*&quot;</span>
+
+<span class="token comment">## 文件内容查找</span>
+<span class="token comment"># 语法</span>
+	<span class="token function">grep</span> -参数 要查找的目录范围
+	<span class="token comment"># 参数</span>
+	<span class="token parameter variable">-n</span> 显示查找结果所在行号
+	<span class="token parameter variable">-R</span> 递归查找目录下的所有文件
+<span class="token comment"># 例子</span>
+	<span class="token function">grep</span> aries /etc
+	<span class="token function">grep</span> aries /etc/passwd
+	
+</code></pre></div><h3 id="系统管理"><a href="#系统管理" class="header-anchor">#</a> 系统管理</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 静态查看系统进程</span>
+	<span class="token function">ps</span> <span class="token parameter variable">-aux</span>
+<span class="token comment"># 实时查看系统进程</span>
+	<span class="token function">top</span>
+	<span class="token comment"># 快捷键</span>
+		↑ 下翻
+		↓ 上翻
+		q 退出
+<span class="token comment"># 关闭进程</span>
+	<span class="token function">kill</span> 进程id 
+<span class="token comment"># 强制关闭进程(谨慎使用)</span>
+	<span class="token function">kill</span> <span class="token parameter variable">-9</span> 进程id
+</code></pre></div><h3 id="输出"><a href="#输出" class="header-anchor">#</a> 输出</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 覆盖输出</span>
+
+<span class="token comment"># 将命令1的执行结果，输出到后面的文件中。</span>
+<span class="token variable"><span class="token variable">`</span>覆盖写入<span class="token variable">`</span></span>
+	命令1 <span class="token operator">&gt;</span> 文件
+<span class="token comment"># 例子</span>
+	<span class="token function">date</span> <span class="token operator">&gt;</span> date.log
+
+<span class="token comment"># 追加输出</span>
+
+<span class="token comment"># 将命令1的执行结果，输出到后面的文件中。</span>
+<span class="token variable"><span class="token variable">`</span>追加写入<span class="token variable">`</span></span>
+	命令1 <span class="token operator">&gt;&gt;</span> 文件
+<span class="token comment"># 例子</span>
+	<span class="token function">date</span> <span class="token operator">&gt;&gt;</span> date.log
+</code></pre></div><h3 id="用户"><a href="#用户" class="header-anchor">#</a> 用户</h3> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token number">1</span>. 创建用户
+  <span class="token variable"><span class="token variable">`</span><span class="token function">useradd</span> <span class="token parameter variable">-g</span> 组名 用户名<span class="token variable">`</span></span>
+<span class="token number">2</span>. 设置密码
+  <span class="token variable"><span class="token variable">`</span><span class="token function">passwd</span> 用户名<span class="token variable">`</span></span>
+<span class="token number">3</span>. 查找系统账户
+  说明：系统每个用户信息保存在<span class="token variable"><span class="token variable">`</span>/etc/passwd<span class="token variable">`</span></span>文件中
+<span class="token number">4</span>. 切换用户
+  <span class="token variable"><span class="token variable">`</span><span class="token function">su</span> 用户名<span class="token variable">`</span></span>
+<span class="token number">5</span>. 删除用户
+  <span class="token variable"><span class="token variable">`</span><span class="token function">userdel</span> <span class="token parameter variable">-r</span> 用户名<span class="token variable">`</span></span>
+
+</code></pre></div><h3 id="权限"><a href="#权限" class="header-anchor">#</a> 权限</h3> <table><thead><tr><th style="text-align:left;">权限字母</th> <th style="text-align:center;">含义</th> <th style="text-align:center;">对文件</th> <th style="text-align:center;">代表命令</th> <th style="text-align:center;">对文件夹</th> <th style="text-align:right;">代表命令</th></tr></thead> <tbody><tr><td style="text-align:left;">R®</td> <td style="text-align:center;">读</td> <td style="text-align:center;">查看文件内容和复制文件</td> <td style="text-align:center;">more cat less cp head tail</td> <td style="text-align:center;">查看文件夹下的文件</td> <td style="text-align:right;">ls</td></tr> <tr><td style="text-align:left;">W(w)</td> <td style="text-align:center;">写</td> <td style="text-align:center;">编辑文件</td> <td style="text-align:center;">vi</td> <td style="text-align:center;">在文件夹内创建和删除文件</td> <td style="text-align:right;">rm touch</td></tr> <tr><td style="text-align:left;">X(x)</td> <td style="text-align:center;">执行</td> <td style="text-align:center;">执行该文件(执行必须具备r权限)</td> <td style="text-align:center;">-</td> <td style="text-align:center;">切换到文件夹</td> <td style="text-align:right;">cd</td></tr></tbody></table> <h3 id="权限访问控制列表"><a href="#权限访问控制列表" class="header-anchor">#</a> 权限访问控制列表</h3> <div class="language-bash extra-class"><pre class="language-bash"><code>Linux 权限
+├─	d		//文件类型
+├─	rwx	<span class="token parameter variable">-u</span>	//所有者权限
+├─	rwx <span class="token parameter variable">-g</span>	//所有组权限
+├─	rwx <span class="token parameter variable">-o</span>	//其他人权限
+├─	u_bz	//所有者
+└─	g_bz	//所数组
+</code></pre></div><div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 查看权限</span>
+
+<span class="token function">ls</span> <span class="token parameter variable">-la</span> 文件
+ll 文件
+
+<span class="token comment"># 设置文件所有者</span>
+语法：chown <span class="token punctuation">[</span>-R<span class="token punctuation">]</span> user名:group名 文件名
+参数：-R 如果是文件夹，需要使用这个参数，可以将文件夹及其内部所有文件的所有者和组全部修改
+注意：命令权限需要root
+<span class="token comment">## 修改文件所有者</span>
+	<span class="token function">chown</span> 用户名 文件名
+<span class="token comment">## 修改文件所属组</span>
+	<span class="token function">chown</span> :组名 文件名
+<span class="token comment">## 修改文件所有者和所属组</span>
+	<span class="token function">chown</span> 用户名:组名 文件名
+<span class="token comment">## 修改文件夹的所有者和所属组</span>
+	<span class="token function">chown</span> <span class="token punctuation">[</span>-R<span class="token punctuation">]</span> 用户名:组名 文件夹
+
+<span class="token comment"># 权限设置1</span>
+语法：chmod u±rwx,g±rwx,o±rwx 文件名
+运算符：
+	- 删除权限
+	+ 添加权限
+	<span class="token operator">=</span> 赋值权限
+<span class="token comment">## 给文件的所有者添加执行权限</span>
+<span class="token function">chmod</span> u+x 文件名
+<span class="token comment">## 给文件的其他人删除所有权限</span>
+<span class="token function">chmod</span> o-rwx 文件名
+<span class="token comment">## 给文件的所属组设置读写权限</span>
+<span class="token function">chmod</span> <span class="token assign-left variable">g</span><span class="token operator">=</span>wx 文件名
+
+<span class="token comment"># 文件的每个归属方的权限的值使用rwx之和计算出来的。</span>
+<span class="token comment"># 语法</span>
+	<span class="token variable"><span class="token variable">`</span><span class="token function">chmod</span> <span class="token punctuation">[</span>-R<span class="token punctuation">]</span> nnn 文件<span class="token variable">`</span></span> 
+	<span class="token parameter variable">-R</span> 递归设置文件夹内所有文件
+<span class="token comment"># 设置文件的权限为(所有者可读可写可执行，所属组可读可写，其他人可读)</span>
+	<span class="token function">chmod</span> <span class="token number">764</span> 文件名
+</code></pre></div></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新日期: </span> <span class="time">3/2/2023, 10:52:03 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/my-blog/blog/node/1.html" class="prev">
+          mac node 安装
+        </a></span> <span class="next"><a href="/my-blog/blog/webglNotes/1.html">
+          webgl 概述以及资源介绍
+        </a></span></p></div> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:12rem;" data-v-b57cc07c data-v-7dd95ae2><li class="level-2" data-v-b57cc07c><a href="/my-blog/blog/linux/1.html#linux-文件系统" class="sidebar-link reco-side-linux-文件系统" data-v-b57cc07c>Linux 文件系统</a></li><li class="level-2" data-v-b57cc07c><a href="/my-blog/blog/linux/1.html#目录结构" class="sidebar-link reco-side-目录结构" data-v-b57cc07c>目录结构</a></li><li class="level-2" data-v-b57cc07c><a href="/my-blog/blog/linux/1.html#文件含义" class="sidebar-link reco-side-文件含义" data-v-b57cc07c>文件含义</a></li><li class="level-2" data-v-b57cc07c><a href="/my-blog/blog/linux/1.html#文件管理命令" class="sidebar-link reco-side-文件管理命令" data-v-b57cc07c>文件管理命令</a></li><li class="level-3" data-v-b57cc07c><a href="/my-blog/blog/linux/1.html#查看文件列表" class="sidebar-link reco-side-查看文件列表" data-v-b57cc07c>查看文件列表</a></li><li class="level-3" data-v-b57cc07c><a href="/my-blog/blog/linux/1.html#切换目录" class="sidebar-link reco-side-切换目录" data-v-b57cc07c>切换目录</a></li><li class="level-3" data-v-b57cc07c><a href="/my-blog/blog/linux/1.html#查看当前命令所在的目录" class="sidebar-link reco-side-查看当前命令所在的目录" data-v-b57cc07c>查看当前命令所在的目录</a></li><li class="level-3" data-v-b57cc07c><a href="/my-blog/blog/linux/1.html#新建文件夹及文件" class="sidebar-link reco-side-新建文件夹及文件" data-v-b57cc07c>新建文件夹及文件</a></li><li class="level-3" data-v-b57cc07c><a href="/my-blog/blog/linux/1.html#删除文件" class="sidebar-link reco-side-删除文件" data-v-b57cc07c>删除文件</a></li><li class="level-3" data-v-b57cc07c><a href="/my-blog/blog/linux/1.html#拷贝文件" class="sidebar-link reco-side-拷贝文件" data-v-b57cc07c>拷贝文件</a></li><li class="level-3" data-v-b57cc07c><a href="/my-blog/blog/linux/1.html#移动文件或修改文件名" class="sidebar-link reco-side-移动文件或修改文件名" data-v-b57cc07c>移动文件或修改文件名</a></li><li class="level-3" data-v-b57cc07c><a href="/my-blog/blog/linux/1.html#获取文件的md5指纹-数字签名" class="sidebar-link reco-side-获取文件的md5指纹-数字签名" data-v-b57cc07c>获取文件的md5指纹(数字签名)</a></li><li class="level-3" data-v-b57cc07c><a href="/my-blog/blog/linux/1.html#文本内容查看命令" class="sidebar-link reco-side-文本内容查看命令" data-v-b57cc07c>文本内容查看命令</a></li><li class="level-3" data-v-b57cc07c><a href="/my-blog/blog/linux/1.html#文件查找" class="sidebar-link reco-side-文件查找" data-v-b57cc07c>文件查找</a></li><li class="level-3" data-v-b57cc07c><a href="/my-blog/blog/linux/1.html#系统管理" class="sidebar-link reco-side-系统管理" data-v-b57cc07c>系统管理</a></li><li class="level-3" data-v-b57cc07c><a href="/my-blog/blog/linux/1.html#输出" class="sidebar-link reco-side-输出" data-v-b57cc07c>输出</a></li><li class="level-3" data-v-b57cc07c><a href="/my-blog/blog/linux/1.html#用户" class="sidebar-link reco-side-用户" data-v-b57cc07c>用户</a></li><li class="level-3" data-v-b57cc07c><a href="/my-blog/blog/linux/1.html#权限" class="sidebar-link reco-side-权限" data-v-b57cc07c>权限</a></li><li class="level-3" data-v-b57cc07c><a href="/my-blog/blog/linux/1.html#权限访问控制列表" class="sidebar-link reco-side-权限访问控制列表" data-v-b57cc07c>权限访问控制列表</a></li></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/my-blog/assets/js/app.14f16a50.js" defer></script><script src="/my-blog/assets/js/3.e2c549c5.js" defer></script><script src="/my-blog/assets/js/1.8c225dfe.js" defer></script><script src="/my-blog/assets/js/15.6a7a12a9.js" defer></script>
+  </body>
+</html>
